@@ -1,0 +1,29 @@
+:root {
+  /* Brand Colors */
+  --color-primary: #f60505;
+  --color-background: #fcf8f4;
+  --color-primary-dark: #ca161a;
+  --color-primary-medium: #c43335;
+  --color-primary-soft: #e26c6c;
+  --color-primary-light: #fa9f9b;
+  --color-primary-pale: #ffd5cf;
+  
+  /* Typography */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Status Colors */
+  --success: #27AE60;
+  --error: #EB5757;
+  --warning: #F2994A;
+  --info: #2D9CDB;
+  
+  /* Neutral */
+  --text-primary: #333;
+  --text-secondary: #666;
+  --text-muted: #999;
+  --border-color: #E0E0E0;
+  --bg-white: #FFFFFF;
+  --bg-light: #F9FAFB;
+}

@@ -1,0 +1,316 @@
+.rnn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100vh - 120px);
+    width: 100%;
+}
+
+.rnn-top-section {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+    min-height: 0;
+}
+
+.rnn-chart-card {
+    flex: 3;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E0E0E0;
+    display: flex;
+    flex-direction: column;
+}
+
+.rnn-sidebar {
+    flex: 1;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.rnn-tabs {
+    display: flex;
+    border-bottom: 1px solid #E0E0E0;
+    background: #FAFAFA;
+}
+
+.rnn-tab {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.rnn-tab:hover {
+    background: #F0F0F0;
+}
+
+.rnn-tab.active {
+    color: var(--color-primary-dark);
+    border-bottom: 2px solid var(--color-primary-dark);
+    background: #fff;
+}
+
+.rnn-sidebar-section {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.rnn-sidebar-header {
+    margin-bottom: 15px;
+}
+
+.rnn-sidebar-header h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Diagnostic Grid */
+.diagnostic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.diagnostic-metric-card {
+    background-color: #F8F9FA;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: left;
+}
+
+.diagnostic-metric-label {
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.diagnostic-metric-value {
+    font-size: 16px;
+    font-weight: 800;
+    color: #333;
+}
+
+/* Telemetry List (Ported from Geospatial) */
+.telemetry-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.vehicle-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid #E0E0E0;
+    padding: 10px;
+}
+
+.vehicle-card:hover {
+    background-color: var(--color-primary-pale);
+}
+
+.vehicle-card.selected {
+    background-color: var(--color-primary-pale);
+    border: 2px solid var(--color-primary-dark);
+}
+
+.vehicle-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F5F7FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.vehicle-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #333;
+}
+
+.vehicle-info {
+    flex: 1;
+}
+
+.vehicle-plate {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.vehicle-driver {
+    font-size: 13px;
+    color: #666;
+}
+
+.vehicle-metrics {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.badge.active {
+    background-color: #E8F5E9;
+    color: #27AE60;
+}
+
+.badge.offline {
+    background-color: #F5F5F5;
+    color: #888;
+}
+
+.rnn-chart-header {
+    margin-bottom: 20px;
+}
+
+.rnn-chart-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.rnn-chart-subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.rnn-suggestions-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rnn-suggestions-header {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.rnn-suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+
+.rnn-suggestion-card {
+    background: var(--color-primary-pale);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(246, 5, 5, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.rnn-suggestion-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.rnn-location-tag {
+    font-size: 16px;
+    font-weight: 800;
+    color: #333;
+}
+
+.rnn-priority-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.rnn-priority-badge.high {
+    background-color: #FFEBEE;
+    color: #D32F2F;
+    border: 1px solid #FFCDD2;
+}
+
+.rnn-priority-badge.medium {
+    background-color: #FFF3E0;
+    color: #E65100;
+    border: 1px solid #FFE0B2;
+}
+
+.rnn-priority-badge.low {
+    background-color: #E8F5E9;
+    color: #2E7D32;
+    border: 1px solid #C8E6C9;
+}
+
+.rnn-suggestion-body {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    flex: 1;
+}
+
+/* Custom Tooltip styling */
+.rnn-custom-tooltip {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.rnn-tooltip-time {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.rnn-tooltip-metric {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
